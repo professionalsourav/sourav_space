@@ -5,7 +5,8 @@ const connectDB = require("./config/db");
 const Authrouter = require("./routes/userRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const chatRouter = require("./routes/chatRoutes");
-const messageRouter = require("./routes/messageRoutes");
+const messageRouter = require("./routes/newMessageRoutes");
+
 
 
 
@@ -43,6 +44,22 @@ app.use("/api/message", messageRouter);
 // })
 // }
   //-----------deployment--------
+
+
+
+  // const express = require("express");
+  // const { protect } = require("../middleware/authMiddlewire");
+  // const {
+  //   sendMessage,
+  //   allMessages,
+  // } = require("../controller/messageController");
+
+  // const messageRouter = express.Router();
+
+  // messageRouter.route("/").post(protect, sendMessage);
+  // messageRouter.route("/:chatId").get(protect, allMessages);
+
+  // module.exports = messageRouter; 
 
   app.use(notFound);
 app.use(errorHandler);
