@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ede55f8e.css",
+    "main.js": "/static/js/main.71bfe9e2.js",
+    "static/media/indianflag.jpg": "/static/media/indianflag.e0509a3a806341481389.jpg",
+    "index.html": "/index.html",
+    "main.ede55f8e.css.map": "/static/css/main.ede55f8e.css.map",
+    "main.71bfe9e2.js.map": "/static/js/main.71bfe9e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ede55f8e.css",
+    "static/js/main.71bfe9e2.js"
+  ]
+}
