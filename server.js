@@ -19,7 +19,11 @@ connectDB();
 app.use(express.json());
 app.use(morgan("dev"))
 
-app.use(express.static("build"))
+//app.use(express.static("build"))
+
+  app.get("/", (req,res) => {
+  res.status(200).json("api is running")
+})
 
 app.use("/api/user", Authrouter);
 app.use("/api/chat", chatRouter);
